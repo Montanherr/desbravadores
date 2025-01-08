@@ -19,6 +19,17 @@ Cypress.Commands.add('selectedRoom', (
   selectedRoom()
 })
 
+Cypress.Commands.add('step', (
+) => {
+  const step = () => {
+    // Visita a URL fornecida
+    cy.visit('https://reservas.desbravador.com.br/hotel-app/hotel-teste-desbravador-8050/step3')
+   
+  }
+  step()
+})
+
+
 
 
 
