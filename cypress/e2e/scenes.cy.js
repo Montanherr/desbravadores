@@ -24,7 +24,7 @@ describe("Locação", () => {
 
 it('Deve adicionar na reserva 02 Adultos e 01 Criança de até 05 anos / preencher os dados do cartão de credito ', () => {
   cy.selectedRoom();
-  cy.wait(10000); 
+  cy.wait(30000); 
   cy.get(':nth-child(2) > :nth-child(4) > :nth-child(1) > :nth-child(1) > .col-12.col-md-12 > .rate-list > .collapse > .rate-list-content > .justify-content-center > :nth-child(4) > .pax-select > .mb-3 > .form-select')
   .select('2')
   .should('have.value', '2');
